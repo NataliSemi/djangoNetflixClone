@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix - {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block others %}{% endblock others %}
+</head>
+<body class="bg-black text-array-100">
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
